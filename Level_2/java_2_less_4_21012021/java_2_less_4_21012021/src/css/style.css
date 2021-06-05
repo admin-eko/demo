@@ -1,0 +1,34 @@
+.root {
+    -fx-font-size: 16;
+    /*-fx-background-image: url("https://v-2021.ru/wp-content/uploads/2020/03/8.png");*/
+    -fx-background-image: url("/image/a.jpg");
+    -fx-background-size: 100% 100%;
+
+}
+
+.button {
+    -fx-background-color: coral;
+}
+
+.button:hover, #addBtn:hover {
+    -fx-background-color: #fffb00;
+    -fx-font-size: 18;
+}
+
+#addBtn {
+    -fx-background-color: #76ff50;
+}
+
+/*#addBtn:hover{*/
+/*     -fx-background-color: #dcff50;*/
+/* }*/
+
+.text-area {
+    /*-fx-background-color: #fffb00;*/
+    -fx-control-inner-background: yellow;
+    -fx-text-fill: #42b71f;
+    -fx-highlight-fill: aquamarine;
+    -fx-highlight-text-fill: green;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}

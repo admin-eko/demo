@@ -1,0 +1,30 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+            <MenuBar>
+                <Menu text="File">
+                    <MenuItem text="Open"/>
+                    <MenuItem text="Save"/>
+                    <MenuItem text="Exit"/>
+                </Menu>
+            </MenuBar>
+    </top>
+
+        <GridPane fx:controller="sample.Controller"
+                  xmlns="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+        <Button text="Ввод1" GridPane.columnIndex="1" GridPane.rowIndex="0"
+        onAction="#clickBtn1" />
+        <Button text="Ввод2" GridPane.columnIndex="1" GridPane.rowIndex="1"
+        onAction="#clickBtn2"/>
+        <TextArea fx:id="TextArea" GridPane.columnIndex="0" GridPane.rowIndex="0"
+        prefWidth="300" />
+        <TextField fx:id="TextField" GridPane.columnIndex="0" GridPane.rowIndex="1"
+    prefWidth="100" onAction="#clickBtn2"/>
+
+
+
+
+</GridPane>
+

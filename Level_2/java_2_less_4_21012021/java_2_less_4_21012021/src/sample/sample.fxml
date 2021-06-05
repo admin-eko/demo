@@ -1,0 +1,25 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import java.net.URL?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <stylesheets>
+        <URL value="@/css/style.css"/>
+    </stylesheets>
+
+    <Button text="btn1" GridPane.rowIndex="0" GridPane.columnIndex="0"
+            onAction="#clickBtn1"/>
+    <Button text="send" GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#clickBtnSend"/>
+    <TextArea fx:id="textArea" GridPane.rowIndex="1" GridPane.columnIndex="0"
+              prefWidth="300"/>
+    <TextField fx:id="textField"
+               promptText="input text" GridPane.rowIndex="1" GridPane.columnIndex="1"
+               onAction="#clickBtnSend"/>
+
+</GridPane>
